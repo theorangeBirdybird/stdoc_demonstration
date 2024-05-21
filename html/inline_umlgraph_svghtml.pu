@@ -1,0 +1,417 @@
+@startuml inline_umlgraph_1.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+
+
+stop
+@enduml
+@startuml inline_umlgraph_2.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+
+
+stop
+@enduml
+@startuml inline_umlgraph_3.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+
+switch (Stav automatu (//case4button//))
+case (0 (cekani))
+:case4button:=10
+//[[./md__rizeni__action.html Podminky]]//
+//[[./md__rizeni__library__cykly.html Cykly]](btnStart,LedBottomRightRed)//;
+
+case (10 (Zapnuty mixer))
+:Start Mixeru
+//doMotor:=TRUE//
+//startCasovac:=TRUE//;
+if (Doba casovace ubehla
+//TON_Mixer.Q//) then (Yes)
+:startCasovac:=FALSE
+case4button:=0;
+else (No)
+endif
+
+case (neplatny stav)
+:Prechod do pocatecniho stavu
+//case4button:=0//;
+endswitch
+
+
+stop
+@enduml
+@startuml inline_umlgraph_4.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+if (komentar podminky
+//vypsana_podminka//) then (Yes)
+else (Alternativni 
+    vetev)
+
+:prikazN;
+endif
+
+stop
+@enduml
+@startuml inline_umlgraph_5.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+while (podminka)
+->Pravda;
+:pkazy;
+endwhile (konec podminky)
+repeat :Pocatek REPEAT;
+if (//predcasne_ukonceni//) then (Yes)
+break
+
+else (No)
+endif
+
+repeat while (podminka
+//vysvetleni podminky//) is (Yes)
+->No;
+:i:=StartValue;
+while (//i<=i:=StartValueStopValue//) is (Pro kazde n-te cislo od StartValue do StopValue)
+backward:i:=i+i:=StartValueStopValuen;
+:inkrementace kazdeho n-teho prvku pole
+//Result[i]:=Result[i]+1//;
+endwhile (No)
+
+stop
+@enduml
+@startuml inline_umlgraph_6.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+
+
+stop
+@enduml
+@startuml inline_umlgraph_7.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+
+:recepty.status.loaded:=FALSE
+recepty.status.saved:=FALSE;
+if (//recepty.cmd.save//) then (Yes)
+if (//(MpRecipeXml_Semafor.CommandDone)ANDNOT(MpRecipeXml_Semafor.ErrorORMpRecipeRegPar_Semafor.Error)//) then (Yes)
+:recepty.status.saved:=TRUE;
+else (No)
+endif
+
+else (No)
+endif
+
+if (//recepty.cmd.load//) then (Yes)
+
+if (//(MpRecipeXml_Semafor.CommandDone)ANDNOT(MpRecipeXml_Semafor.ErrorORMpRecipeRegPar_Semafor.Error)//) then (Yes)
+:recepty.status.loaded:=TRUE;
+else (No)
+endif
+
+else (No)
+endif
+
+
+stop
+@enduml
+@startuml inline_umlgraph_8.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+
+
+
+
+
+stop
+@enduml
+@startuml inline_umlgraph_9.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+
+
+stop
+@enduml
+@startuml inline_umlgraph_10.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+
+
+stop
+@enduml
+@startuml inline_umlgraph_11.svg
+!define SVG
+!define URLFORMAT "svg"
+<style>
+activityDiagram {
+BackgroundColor #fff2cc
+BorderColor #d6b656
+FontColor #0
+FontName arial
+diamond {
+BackgroundColor #FAC385
+LineColor #b46504
+FontColor black
+FontName arial
+}
+}
+document {
+BackgroundColor transparent
+}
+</style>
+
+start
+switch ( (//caseSemafor//))
+case (CEKEJ_NA_ZAPNUTI)
+:recepty.cmd.load:=TRUE
+//doLedRed:=semafor[CEKEJ_NA_ZAPNUTI].red//
+//doLedYellow:=semafor[CEKEJ_NA_ZAPNUTI].yellow//
+//doLedGreen:=semafor[CEKEJ_NA_ZAPNUTI].green//
+//startTON:=FALSE//;
+
+if (//btnStartANDrecepty.status.loaded//) then (Yes)
+:caseSemafor:=STOP
+//startTON:=FALSE//;
+else (No)
+endif
+
+case (STOP)
+if (//TON_Semafor.Q//) then (Yes)
+:caseSemafor:=PRIPRAVIT
+//startTON:=FALSE//;
+else (No)
+endif
+
+case (PRIPRAVIT)
+if (//TON_Semafor.Q//) then (Yes)
+:caseSemafor:=VOLNO
+//startTON:=FALSE//;
+else (No)
+endif
+
+case (VOLNO)
+if (//TON_Semafor.Q//) then (Yes)
+:caseSemafor:=ZASTAVIT
+//startTON:=FALSE//;
+else (No)
+endif
+
+case (ZASTAVIT)
+if (//TON_Semafor.Q//) then (Yes)
+:caseSemafor:=STOP
+//startTON:=FALSE//;
+else (No)
+endif
+
+endswitch
+
+
+
+stop
+@enduml
+@startuml inline_umlgraph_12.svg
+!define SVG
+!define URLFORMAT "svg"
+skinparam component {
+BackgroundColor #565656
+BorderColor #0
+FontColor #ffffff
+}
+
+component Mixer
+url of Mixer is [[./md__mixer__mixer.html]]
+component Recepty
+url of Recepty is [[./md__rizeni__recepty__recepty.html]]
+component Semafor
+url of Semafor is [[./md__rizeni__semafor__semafor.html]]
+@enduml
