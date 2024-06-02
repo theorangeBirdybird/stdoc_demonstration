@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['save_0',['Save',['../_recepty_8st.html#a060459fd122502dee153cae543974d3b',1,'Recepty.st']]],
-  ['semafor_1',['Semafor',['../md__rizeni__semafor__semafor.html',1,'']]],
-  ['semafor_2emd_2',['Semafor.md',['../_semafor_8md.html',1,'']]],
-  ['semafor_2est_3',['Semafor.st',['../_semafor_8st.html',1,'']]],
-  ['startcasovac_4',['startCasovac',['../_mixer_8st.html#a0fdbe1d60193b649e7212b92d0fb17ae',1,'Mixer.st']]],
-  ['startton_5',['startTON',['../_semafor_8st.html#a0f596f83b92d64fecf9b5ca69859b97a',1,'Semafor.st']]]
+  ['todo_20list_0',['Todo List',['../todo.html',1,'']]],
+  ['ton_5fmixer_1',['TON_Mixer',['../_mixer_8st.html#ab52c9d405c0cc1c14bd86e9091e2cf6f',1,'Mixer.st']]],
+  ['ton_5fsemafor_2',['TON_Semafor',['../_semafor_8st.html#a1252027338f0365682dc9f531f0ca8dc',1,'Semafor.st']]]
 ];

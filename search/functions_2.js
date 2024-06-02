@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mpreciperegpar_5fsemafor_0',['MpRecipeRegPar_Semafor',['../_recepty_8st.html#af697547c1615531daabaea850fd71d7c',1,'Recepty.st']]],
-  ['mprecipexml_5fsemafor_1',['MpRecipeXml_Semafor',['../_recepty_8st.html#ac31e9411e366091411cf703eef521974',1,'MpRecipeXml_Semafor(MpLink :=, Enable :=, ErrorReset :=, DeviceName :=, FileName :=, Header :=, Category :=, LoadType :=, Load :=, Save :=, UpdateNotification :=);*) recepty.status.loaded :=FALSE;recepty.status.saved :=FALSE;IF recepty.cmd.save THEN MpRecipeXml_Semafor.Save :=TRUE;MpRecipeXml_Semafor.MpLink :=ADR(gRecipeXml:&#160;Recepty.st'],['../_recepty_8st.html#a45ddfa18ca3df02d25d9a9e900c8f4c2',1,'MpRecipeXml_Semafor():&#160;Recepty.st']]]
+  ['ton_5fmixer_0',['TON_Mixer',['../_mixer_8st.html#ab52c9d405c0cc1c14bd86e9091e2cf6f',1,'Mixer.st']]],
+  ['ton_5fsemafor_1',['TON_Semafor',['../_semafor_8st.html#a1252027338f0365682dc9f531f0ca8dc',1,'Semafor.st']]]
 ];

@@ -75,9 +75,7 @@ start
 
 switch (Stav automatu (//case4button//))
 case (0 (cekani))
-:case4button:=10
-//[[./md__rizeni__action.html Podminky]]//
-//[[./md__rizeni__library__cykly.html Cykly]](btnStart,LedBottomRightRed)//;
+:case4button:=10;
 
 case (10 (Zapnuty mixer))
 :Start Mixeru
@@ -120,13 +118,26 @@ BackgroundColor transparent
 </style>
 
 start
-if (komentar podminky
-//vypsana_podminka//) then (Yes)
-else (Alternativni 
-    vetev)
+while (podminka)
+->Pravda;
+:pkazy;
+endwhile (konec podminky)
+repeat :Pocatek REPEAT;
+if (//predcasne_ukonceni//) then (Yes)
+break
 
-:prikazN;
+else (No)
 endif
+
+repeat while (podminka
+//vysvetleni podminky//) is (Yes)
+->No;
+:i:=StartValue;
+while (//i<=i:=StartValueStopValue//) is (Pro kazde n-te cislo od StartValue do StopValue)
+backward:i:=i+i:=StartValueStopValuen;
+:inkrementace kazdeho n-teho prvku pole
+//Result[i]:=Result[i]+1//;
+endwhile (No)
 
 stop
 @enduml
@@ -152,26 +163,13 @@ BackgroundColor transparent
 </style>
 
 start
-while (podminka)
-->Pravda;
-:pkazy;
-endwhile (konec podminky)
-repeat :Pocatek REPEAT;
-if (//predcasne_ukonceni//) then (Yes)
-break
+if (komentar podminky
+//vypsana_podminka//) then (Yes)
+else (Alternativni 
+    vetev)
 
-else (No)
+:prikazN;
 endif
-
-repeat while (podminka
-//vysvetleni podminky//) is (Yes)
-->No;
-:i:=StartValue;
-while (//i<=i:=StartValueStopValue//) is (Pro kazde n-te cislo od StartValue do StopValue)
-backward:i:=i+i:=StartValueStopValuen;
-:inkrementace kazdeho n-teho prvku pole
-//Result[i]:=Result[i]+1//;
-endwhile (No)
 
 stop
 @enduml
@@ -224,6 +222,8 @@ BackgroundColor transparent
 
 start
 
+:[[./md__rizeni__podminky.html Podminky]];
+:[[./md__rizeni__library__cykly.html Cykly]](btnStart,LedBottomRightRed);
 :recepty.status.loaded:=FALSE
 recepty.status.saved:=FALSE;
 if (//recepty.cmd.save//) then (Yes)
